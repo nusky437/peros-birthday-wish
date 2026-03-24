@@ -494,6 +494,9 @@ html, body {
     height: auto;
     min-height: 100dvh;
     overflow: visible;
+    /* ── smooth scroll on iOS ── */
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
   }
 
   /* Stack: slideshow on top, message below */
