@@ -4,6 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Happy Birthday ❤️</title>
+<link rel="icon" href="birthdayicon.png" type="image/png" />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;0,700;1,300;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
 <style>
 /* ═══════════════════════════════════════════════
@@ -539,7 +540,6 @@ html, body {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    /* remove slide-in transform that can clip content */
     transform: translateX(0) !important;
   }
 
@@ -683,7 +683,7 @@ html, body {
         May this new year of your life bring you adventures beyond your dreams, love that fills every corner, and joy that never fades.
       </p>
       <blockquote class="msg-quote" id="msg-quote">
-        “As you celebrate another year of life, may Jesus Christ walk beside you, light your way, and shower you with unending blessings and happiness.”
+        "As you celebrate another year of life, may Jesus Christ walk beside you, light your way, and shower you with unending blessings and happiness."
       </blockquote>
       <button class="msg-btn" id="msg-btn" onclick="fireConfetti()">
         🎉 &nbsp; Celebrate!
@@ -785,7 +785,7 @@ function setActive(id, on){
    SLIDESHOW
 ═══════════════════════════════════════════════ */
 const TOTAL = 12;
-const IMAGES = Array.from({length:TOTAL},(_,i)=>`images/pic${i+1}.jpg`);
+const IMAGES = Array.from({length:TOTAL},(_,i)=>`pic${i+1}.jpg`);
 const INTERVAL = 3500;
 
 let cur = 0;
